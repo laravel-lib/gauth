@@ -1,0 +1,39 @@
+{
+    "name": "laravel-lib/gauth",
+    "description": "Google Authenticator for Laravel",
+    "keywords": ["laravel", "google", "authenticator", "auth", "gauth"],
+    "homepage": "https://github.com/laravel-lib/gauth",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zulkifli Mohamed",
+            "email": "mr.putera@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0|^8.1",
+        "illuminate/support": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/phpunit-bridge": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelLib\\GAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelLib\\GAuth\\GAuthServiceProvider"
+            ],
+            "aliases": {
+                "GAuth": "LaravelLib\\GAuth\\Facades\\GAuth"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
